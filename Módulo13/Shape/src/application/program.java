@@ -34,7 +34,6 @@ public class program {
                 double height = sc.nextDouble();
 
                 list.add(new Rectangle(color, width, height));
-                list.add(new Rectangle(color, width, height));
             }
             else {
                 if (temp == 'c') {

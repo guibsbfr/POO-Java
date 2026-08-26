@@ -3,6 +3,7 @@ package entities;
 import enums.Color;
 
 public class Rectangle extends Shape {
+
     private Double width;
     private Double height;
 
