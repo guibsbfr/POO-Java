@@ -20,7 +20,7 @@ public class Reservation {
     public Reservation(Integer roomNumber, LocalDate checkIn, LocalDate checkOut) {
         LocalDate now = LocalDate.now();
         if (checkIn.isBefore(now) || checkOut.isBefore(now)) {
-            throw new DomainException("Reservation dates for update must be future dates");
+            throw new DomainException("Reservation dates must be today or future dates");
         }
         if (!checkOut.isAfter(checkIn)) {
             throw new DomainException("Check-out date must be after check-in date");
